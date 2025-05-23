@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Minesweeper AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1 id="game-title">Minesweeper AI</h1>
+
+        <div id="instructions" class="screen">
+            <h2>Play Minesweeper</h2>
+            <p>Click a cell to reveal it.</p>
+            <p>Right-click a cell to mark it as a mine.</p>
+            <p>Mark all mines successfully to win!</p>
+            <button id="play-button">Play Game</button>
+        </div>
+
+        <div id="game-screen" class="screen hidden">
+            <canvas id="gameCanvas" width="600" height="400"></canvas>
+
+            <div id="controls">
+                <button id="ai-move-button">AI Move</button>
+                <button id="reset-button">Reset</button>
+            </div>
+            <p id="game-status"></p>
+        </div>
+    </div>
+
+    <script src="minesweeper_logic.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
